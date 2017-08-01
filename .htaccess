@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule ^post/([a-zA-Z0-9_-]*)$ post.php?title=$1 [QSA]
