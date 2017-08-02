@@ -1,5 +1,21 @@
 <?php
 
+require 'dbconfig.php';
+
+$basePath = calculateBasePath();
+
+
+if (check_auth() == false)
+{
+    
+    
+    logout();
+    header("Location : ".$basePath."/index.php");
+    
+    
+}
+
+
 function sanitize_query($value, $type)
 {
     $escaped_value = '';
@@ -29,3 +45,47 @@ function sanitize_query($value, $type)
     return $escaped_value;
 }
 
+function sanitize_input($value, $type)
+{
+    
+    
+    
+}
+
+
+function login($user, $password)
+{
+    
+    
+    
+}
+
+function logout()
+{
+    
+    
+    
+}
+
+
+function check_auth()
+{
+    
+    
+    
+    
+}
+
+function calculateBasePath()
+{
+    
+    
+}
+
+function connect()
+{
+    $db = null;
+    
+    
+    return $db;
+}
